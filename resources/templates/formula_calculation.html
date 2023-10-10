@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/static/formula_calculation.css">
+    <title>Розрахунок прямокутника</title>
+</head>
+<body>
+<h1>Розрахунок прямокутника</h1>
+
+<label for="length">Довжина:</label>
+<input type="number" id="length" oninput="calculateRectangle()" value="2"/>
+
+<label for="width">Ширина:</label>
+<input type="number" id="width" oninput="calculateRectangle()" value="3"/>
+
+<p>Периметр: <span id="perimeter">0</span></p>
+<p>Площа: <span id="area">0</span></p>
+<p>Довжина діагоналі: <span id="diagonal">0</span></p>
+
+<script src="/resources/js/formula_calculation.js"></script>
+</body>
+</html>
