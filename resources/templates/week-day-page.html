@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/resources/static/week-day-page.css">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="number" id="day" placeholder="ДД" required>
+    /
+    <input type="number" id="month" placeholder="ММ" required>
+    /
+    <input type="number" id="year" placeholder="РРРР" required>
+</div>
+<button onclick="calculateWeekDay()">Визначити день тижня</button>
+<p>День тижня: <span id="weekDay"></span></p>
+<script src="/resources/js/week_day_calculation.js"></script>
+</body>
+</html>
