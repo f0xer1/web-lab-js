@@ -1,0 +1,68 @@
+.chat_block{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+}
+.chat {
+    position: fixed;
+}
+
+#user1-chat {
+    left: 5%;
+}
+
+#user2-chat {
+    right: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: yellow;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.message {
+    margin: 5px;
+    word-wrap: break-word;
+}
+.message-container{
+    width: 45%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.user-nickname{
+    font-weight: bold;
+}
+.user1 {
+    align-self: flex-start;
+    background: #dedede;
+
+}
+
+.user2 {
+    align-self: flex-end;
+    background: #dedede;
+
+}
