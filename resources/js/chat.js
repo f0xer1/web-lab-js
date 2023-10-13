@@ -9,7 +9,7 @@ user1Form.addEventListener("submit", function (event) {
     event.preventDefault();
     const message = user1MessageInput.value.trim();
     if (message !== "") {
-        sendMessage(user1Messages, message, "user1", "Користувач 1");
+        sendMessage(user1Messages, message, "user1");
         user1MessageInput.value = "";
     }
 });
@@ -18,18 +18,18 @@ user2Form.addEventListener("submit", function (event) {
     event.preventDefault();
     const message = user2MessageInput.value.trim();
     if (message !== "") {
-        sendMessage(user1Messages, message, "user2", "Користувач 2");
+        sendMessage(user1Messages, message, "user2");
         user2MessageInput.value = "";
     }
 });
 
-function sendMessage(messagesContainer, message, user, nickname) {
+function sendMessage(messagesContainer, message, user ) {
     const messageElement = document.createElement("div");
     messageElement.textContent = message;
     messageElement.classList.add("message");
 
     const nicknameElement = document.createElement("div");
-    nicknameElement.textContent = nickname;
+    nicknameElement.textContent = user;
     nicknameElement.classList.add("user-nickname");
 
     const messageContainer = document.createElement("div");
