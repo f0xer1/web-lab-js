@@ -15,7 +15,7 @@ function transliterate() {
     let result = "";
 
     for (letter in text) {
-        if (transl[text[letter]] != undefined) {
+        if (transl[text[letter]] !== undefined) {
             result += transl[text[letter]];
         } else {
             result += text[letter];

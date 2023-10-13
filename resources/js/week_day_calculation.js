@@ -1,4 +1,4 @@
-const weekDays = ["Субота", "Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"];
+const weekDays = ["Субота", "Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця"];
 
 
 function calculateWeekDay() {
@@ -6,7 +6,7 @@ function calculateWeekDay() {
     let month = parseInt(document.getElementById("month").value);
     let year = parseInt(document.getElementById("year").value);
 
-    var tempDate = new Date(year, month - 1, day);
+    let tempDate = new Date(year, month - 1, day);
     if (tempDate.getDate() !== day || tempDate.getMonth() !== month - 1 || tempDate.getFullYear() !== year) {
         document.getElementById("weekDay").textContent = "Не існує";
         return;
@@ -16,9 +16,9 @@ function calculateWeekDay() {
         month += 12;
         year--;
     }
-    var k = year % 100;
-    var j = Math.floor(year / 100);
-    var weekDay = (day + Math.floor((13 * (month + 1)) / 5) + k + Math.floor(k / 4) + Math.floor(j / 4) + 5 * j) % 7;
+    let k = year % 100;
+    let j = Math.floor(year / 100);
+    let weekDay = (day + Math.floor((13 * (month + 1)) / 5) + k + Math.floor(k / 4) + Math.floor(j / 4) + 5 * j) % 7;
 
     document.getElementById("weekDay").textContent = weekDays[weekDay];
 }
